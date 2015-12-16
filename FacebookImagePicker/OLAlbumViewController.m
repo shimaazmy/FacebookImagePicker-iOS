@@ -83,7 +83,7 @@ static const NSUInteger kAlbumPreviewImageSize = 78;
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(onButtonDoneClicked)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStyleDone target:self action:@selector(onButtonDoneClicked)];
     self.albumRequestForNextPage = [[OLFacebookAlbumRequest alloc] init];
     [self loadNextAlbumPage];
     
